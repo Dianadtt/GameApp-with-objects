@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Games App</title>
+
+</head>
+
+<body>
+    <form class="creationForm" action="" method="POST">
+        <label for="gameTitle">Title *</label>
+        <input type="text" value="" name="gameTitle" id="gameTitle" />
+
+        <label for="gameDescription">Description</label>
+        <textarea name=" gameDescription" id="gameDescription"></textarea>
+
+        <label for="gameGender">Gender *</label>
+        <select name="gameGender" id="gameGender">
+            <option value="">-</option>
+           <option value="Action">Action</option>
+           <option value="Adventure">Adventure</option>
+       </select>
+
+        <label for="gamePublisher"> Publisher</label>
+        <input type="text" name="gamePublisher" id="gamePublisher" />
+
+        <label for="gameImageUrl" name="gameImageUrl">Image URL *</label>
+        <input type="text" name="gameImageUrl" id="gameImageUrl" />
+
+        <label for="gameRelease" name="gameRelease">Release *</label>
+        <input type="text" name="gameRelease" id="gameRelease" />
+
+        <button type="submit" class="submitBtn">Create Game</button>
+    </form>
+
+    <div id="listOfGames" class="container"></div>
+
+    <div class="formContainer" style="visibility: hidden;" id="formContainer">
+
+        <form id="updateForm">
+            <label for="gameTitle">Title*</label>
+            <input type="text" value="" name="gameTitle" id="gameTitle" />
+
+            <label for="gameDescription">Description</label>
+            <textarea name="gameDescription" id="gameDescription"></textarea>
+
+            <label for="gameImageUrl">Image URL</label>
+            <input type="text" name="gameImageUrl" id="gameImageUrl" />
+
+            <button class="updateBtn" id="saveGameBtn">Save Changes</button>
+            <button class="cancelBtn" id="cancelUpdateGameBtn">Cancel</button>
+
+        </form>
+    </div>
+    <script src="./classes/fetch.js"></script>
+    <script src="./classes/game.js"></script>
+    <script src="view.js"></script>
+
+    <!-- <script src="modelWithAsync.js"></script>
+    <script src="viewWithAsync.js"></script> -->
+
+    <!-- <script src="modelWithPromises.js"></script>
+    <script src="viewWithPromises.js"></script> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .delete-btn {
+        width: 100px;
+        height: 20px;
+        background-color: red;
+        border: none;
+        color: white;
+    }
+    
+    .update-btn {
+        width: 100px;
+        height: 20px;
+        background-color: blue;
+        border: none;
+        color: white;
+    }
+    
+    .submitBtn {
+        width: 100px;
+        height: 20px;
+        background-color: green;
+        border: none;
+        color: white;
+    }
+    
+    .updateBtn {
+        width: 100px;
+        height: 20px;
+        background-color: green;
+        border: none;
+        color: white;
+    }
+    
+    .cancelBtn {
+        width: 100px;
+        height: 20px;
+        background-color: red;
+        border: none;
+        color: white;
+    }
+    
+    img {
+        width: 90px;
+        float: left;
+        margin: 10px;
+    }
+    
+    h1 {
+        color: blue;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        margin: 10px;
+    }
+    
+    .creationForm {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .creationForm>label,
+    .creationForm>input,
+    .creationForm>textarea,
+    .creationForm>select {
+        display: block;
+        margin: 5px 10px;
+    }
+    
+    .inputError {
+        border: 1px solid red;
+    }
+    
+    .errorMsg {
+        margin-left: 10px;
+        color: red;
+        display: block;
+        font-size: 14px;
+    }
+    
+    #updateForm {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #updateForm>label,
+    #updateForm>input,
+    #updateForm>textarea,
+    #updateForm>select {
+        display: block;
+        margin: 5px 10px;
+    }
