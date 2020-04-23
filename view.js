@@ -1,4 +1,4 @@
-const fetchApi = new FetchApi("https://games-world.herokuapp.com");
+const fetchApi = new FetchApi("https://games-app-siit.herokuapp.com");
 
 async function getGames() {
     const listOfGames = await fetchApi.getGamesList()
@@ -14,7 +14,7 @@ async function getGames() {
         );
         listGames.push(game)
     };
-    //afisam jocurile in html
+
     const gamesContainer = document.querySelector(".container");
     for (let i = 0; i < listGames.length; i++) {
         listGames[i].render(gamesContainer);

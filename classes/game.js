@@ -4,7 +4,7 @@ function Game(id, title, imageUrl, description) {
     this.imageUrl = imageUrl
     this.description = description
 
-    this.fetchApi = new FetchApi("https://games-world.herokuapp.com");
+    this.fetchApi = new FetchApi("https://games-app-siit.herokuapp.com");
 }
 
 Game.prototype.render = function(mountContainer) {
@@ -50,9 +50,9 @@ Game.prototype._showUpdateFormInDOM = function(domElement) {
         e.preventDefault();
         var urlencoded = new URLSearchParams();
         urlencoded.append("title", gameTitleElement.value)
-        urlencoded.append("releaseDate", self.releaseDate)
-        urlencoded.append("gender", self.gender)
-        urlencoded.append("publisher", self.publisher)
+            // urlencoded.append("releaseDate", self.releaseDate)
+            // urlencoded.append("gender", self.gender)
+            // urlencoded.append("publisher", self.publisher)
         urlencoded.append("imageUrl", gameImageUrlElement.value)
         urlencoded.append("description", gameDescriptionElement.value);
         const updatedGameFromApi = await fetchApi.updateGameRequest(self._id, urlencoded);
